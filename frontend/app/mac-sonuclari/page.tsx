@@ -1,0 +1,3 @@
+import { PageHero } from "@/components/page-hero";
+import { results } from "@/lib/data";
+export default function ResultsPage(){ return <><PageHero eyebrow="SKORBORD" title="Maç Sonuçları" text="Tamamlanan müsabakaların yayımlanmış sonuçları."/><section className="section"><div className="container results-page">{results.map((r,i)=><article key={i}><div><span>{r.category}</span><small>{r.date}</small></div><div className="score-line"><strong>{r.home}</strong><b>{r.homeScore}</b></div><div className="score-line"><strong>{r.away}</strong><b>{r.awayScore}</b></div><span className="final">MAÇ SONU</span></article>)}</div></section></>}

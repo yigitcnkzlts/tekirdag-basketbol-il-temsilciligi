@@ -1,0 +1,2 @@
+import { ShieldCheck } from "lucide-react"; import { PageHero } from "@/components/page-hero";
+export default function DisciplinePage(){return <><PageHero eyebrow="KAMUYA AÇIK KAYITLAR" title="Yayımlanmış Disiplin Kararları" text="Yalnızca kamuya açık olarak yayımlanmış kararlar bu sayfada listelenir."/><section className="section"><div className="container empty-state"><ShieldCheck/><h2>Yayımlanmış karar bulunmuyor</h2><p>Güncel sezon için kamuya açık bir disiplin kararı yayımlanmadı.</p></div></section></>}

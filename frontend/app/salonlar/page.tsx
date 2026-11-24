@@ -1,0 +1,3 @@
+import { MapPin } from "lucide-react"; import { PageHero } from "@/components/page-hero";
+const halls=["İsmet İnönü Spor Salonu","Atatürk Spor Salonu","100. Yıl Spor Salonu"];
+export default function VenuesPage(){return <><PageHero eyebrow="MÜSABAKA NOKTALARI" title="Spor Salonları" text="Maç programında kullanılan spor salonları ve ilçe bilgileri."/><section className="section"><div className="container venue-grid">{halls.map((h,i)=><article key={h}><MapPin/><span>{i===0?"SÜLEYMANPAŞA":i===1?"ÇERKEZKÖY":"ÇORLU"}</span><h2>{h}</h2><p>Güncel müsabakalar için haftalık programa bakın.</p></article>)}</div></section></>}

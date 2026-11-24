@@ -1,0 +1,1 @@
+import{WifiOff}from"lucide-react";export default function Page(){return <section className="section"><div className="container empty-state"><WifiOff/><h1>İnternet bağlantısı yok</h1><p>Güncel maç programını doğrulamak için bağlantınızı yeniden kurun. Önbellekteki eski program güncel kabul edilmemelidir.</p></div></section>}

@@ -1,0 +1,2 @@
+import { PageHero } from "@/components/page-hero"; import { announcements } from "@/lib/data";
+export default function AnnouncementsPage(){return <><PageHero eyebrow="BİLGİ MERKEZİ" title="Duyurular" text="İl temsilciliğinden yayımlanan güncel bilgilendirmeler."/><section className="section"><div className="container news-grid">{announcements.map((a,i)=><article key={i}><span>{a.tag}</span><small>{a.date}</small><h2>{a.title}</h2><p>{a.text}</p><button>Devamını oku</button></article>)}</div></section></>}

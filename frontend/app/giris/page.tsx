@@ -1,0 +1,2 @@
+import Link from "next/link"; import { LockKeyhole } from "lucide-react"; import { PageHero } from "@/components/page-hero";
+export default function LoginPage(){return <><PageHero eyebrow="YÖNETİM" title="Yönetim Girişi" text="Yetkili kullanıcılar için yönetim alanı."/><section className="section"><div className="container login-card"><LockKeyhole/><h2>Yönetim paneli yakında</h2><p>Panel, halka açık site tamamlandıktan sonra ayrı bir geliştirme aşamasında hazırlanacak.</p><Link href="/" className="button primary">Ana sayfaya dön</Link></div></section></>}
