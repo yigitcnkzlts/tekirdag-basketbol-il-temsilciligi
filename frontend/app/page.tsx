@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { ArrowUpRight, CalendarDays, ChevronRight, Clock3, MapPin, Megaphone, Trophy } from "lucide-react";
 import { announcements, leagues, matches, results } from "@/lib/data";
-import { NextMatchCountdown, PublicStats, ScoreTicker, SeasonTimeline } from "@/components/home-experience";
+import { NextMatchCountdown, PublicStats, RefereeHighlights, ScoreTicker, SeasonTimeline } from "@/components/home-experience";
 
 export default function Home() {
   return <>
@@ -13,6 +13,7 @@ export default function Home() {
     <NextMatchCountdown />
     <ScoreTicker />
     <PublicStats />
+    <RefereeHighlights />
 
     <section className="quick-bar"><div className="container quick-grid"><div><span>SEZON</span><strong>2026–2027</strong></div><div><span>AKTİF LİG</span><strong>4 Kategori</strong></div><div><span>HAFTANIN PROGRAMI</span><strong>28 Kasım – 4 Aralık</strong></div><Link href="/mac-programi">Programı aç <ArrowUpRight size={18}/></Link></div></section>
 
